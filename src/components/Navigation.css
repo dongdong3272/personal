@@ -3,11 +3,112 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    135deg,
+    #1a1a2e 0%,
+    #16213e 25%,
+    #0f3460 50%,
+    #16213e 75%,
+    #1a1a2e 100%
+  );
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   z-index: 1000;
   padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background pattern */
+.navigation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(120, 119, 198, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(120, 119, 198, 0.08) 0%,
+      transparent 50%
+    );
+  animation: floatingPattern 20s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Subtle particle effect */
+.navigation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      1px 1px at 20px 30px,
+      rgba(255, 255, 255, 0.15),
+      transparent
+    ),
+    radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 0.1), transparent),
+    radial-gradient(
+      1px 1px at 90px 40px,
+      rgba(255, 255, 255, 0.08),
+      transparent
+    ),
+    radial-gradient(
+      1px 1px at 130px 80px,
+      rgba(255, 255, 255, 0.12),
+      transparent
+    ),
+    radial-gradient(
+      1px 1px at 160px 30px,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+  background-size: 200px 100px;
+  animation: sparkle 15s linear infinite;
+  z-index: 1;
+}
+
+@keyframes floatingPattern {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateX(-10px) translateY(-5px);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateX(10px) translateY(5px);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateX(-5px) translateY(10px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 200px));
+  }
 }
 
 .nav-container {
@@ -17,33 +118,46 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: relative;
+  z-index: 2;
 }
 
-.nav-logo {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease;
+.nav-name {
+  font-family: "Dancing Script", "Brush Script MT", cursive;
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #e8e8e8 25%,
+    #ffffff 50%,
+    #d0d0d0 75%,
+    #ffffff 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  transition: all 0.4s ease;
+  cursor: default;
+  position: relative;
+  animation: shimmer 3s ease-in-out infinite;
 }
 
-.nav-logo:hover {
+.nav-name:hover {
   transform: scale(1.05);
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
 }
 
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2c3e50;
-  line-height: 1;
-}
-
-.logo-subtitle {
-  font-size: 0.7rem;
-  color: #7f8c8d;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: -2px;
+@keyframes shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .nav-menu {
@@ -63,45 +177,114 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #2c3e50;
-  transition: all 0.3s ease;
-  padding: 0.5rem;
-  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.8rem 1.2rem;
+  border-radius: 16px;
   position: relative;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
 }
 
 .nav-link:hover {
-  background: rgba(52, 152, 219, 0.1);
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:hover::before {
+  opacity: 1;
 }
 
 .nav-link.active {
-  color: #3498db;
-  background: rgba(52, 152, 219, 0.1);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active::before {
+  opacity: 1;
 }
 
 .nav-link.active::after {
   content: "";
   position: absolute;
-  bottom: -8px;
+  bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
   width: 6px;
   height: 6px;
-  background: #3498db;
+  background: radial-gradient(
+    circle,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
   border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-50%) scale(1.2);
+  }
 }
 
 .nav-icon {
-  font-size: 1.2rem;
-  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover .nav-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .nav-label {
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.95;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover .nav-label {
+  opacity: 1;
+  letter-spacing: 1.2px;
 }
 
 @media (max-width: 768px) {

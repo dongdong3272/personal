@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "icon": "🩸",
+    "title": "Blood Type",
+    "value": "O",
+    "description": "Universal donor vibes",
+    "variant": "accent"
+  },
+  {
+    "id": "2",
+    "icon": "🧠",
+    "title": "MBTI",
+    "value": "ISTJ",
+    "description": "The Inspector",
+    "variant": "accent"
+  },
+  {
+    "id": "3",
+    "icon": "♌",
+    "title": "Zodiac",
+    "value": "Cancer",
+    "description": "Loyal and Protective",
+    "variant": "accent"
+  },
+  {
+    "id": "4",
+    "icon": "🍵",
+    "title": "Fuel",
+    "value": "Tea",
+    "description": "Relaxing and Refreshing",
+    "variant": "accent"
+  },
+  {
+    "id": "5",
+    "icon": "🌙",
+    "title": "Schedule",
+    "value": "Night Owl",
+    "description": "Peak hours: 10PM-1AM",
+    "variant": "accent"
+  },
+  {
+    "id": "6",
+    "icon": "🕒",
+    "title": "Superpower",
+    "value": "Time Management",
+    "description": "Too many hobbies to enjoy",
+    "variant": "accent"
+  },
+  {
+    "id": "7",
+    "icon": "💎",
+    "title": "Favorite Brands",
+    "value": "SONY & PUMA",
+    "description": "Music and Sports",
+    "variant": "accent"
+  },
+  {
+    "id": "8",
+    "icon": "🎤",
+    "title": "Favorite Singers",
+    "value": "Jian Li & Shen Zhou",
+    "description": "Gentle and Humble",
+    "variant": "accent"
+  },
+  {
+    "id": "9",
+    "icon": "🎥",
+    "title": "Favorite Movie",
+    "value": "Farewell My Concubine",
+    "description": "Chinese Classic",
+    "variant": "accent"
+  },
+  {
+    "id": "10",
+    "icon": "📚",
+    "title": "Favorite Book",
+    "value": "Moment in Peking",
+    "description": "Modern version of Dream of the Red Chamber",
+    "variant": "accent"
+  },
+  {
+    "id": "11",
+    "icon": "👑",
+    "title": "Favorite Character",
+    "value": "Michael Corleone",
+    "description": "The Godfather",
+    "variant": "accent"
+  },
+  {
+    "id": "12",
+    "icon": "🎭",
+    "title": "Favorite Actor",
+    "value": "Leonardo DiCaprio",
+    "description": "Shutter Island",
+    "variant": "accent"
+  }
+]

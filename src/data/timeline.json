@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1",
+    "period": "2016-2019",
+    "stage": "High School Era",
+    "side": "left",
+    "hobbies": [
+      "Running & Soccer",
+      "Reading Classic Literature",
+      "Studying Physics Olympiad (Love Relativity Theory the most)"
+    ],
+    "achievements": [
+      "Football team starting players",
+      "First prize in Chinese Physics Olympiad (35th)",
+      "Bronze medal of 1,500m for three consecutive years"
+    ]
+  },
+  {
+    "id": "2",
+    "period": "2019-2023",
+    "stage": "Undergraduate Years",
+    "side": "right",
+    "hobbies": [
+      "Ice-skating",
+      "Solving Math Problems & Coding",
+      "Watching Movies & Anime",
+      "Video Game Enthusiasts"
+    ],
+    "achievements": [
+      "Exchanged in three different universities",
+      "Be good at multiple games (MOBA, FPS, Rogue-like, Soulslike, Sandbox, RPG, Rhythm, etc.)",
+      "Become a weeb :P"
+    ]
+  },
+  {
+    "id": "3",
+    "period": "2023-2025",
+    "stage": "Graduate Years",
+    "side": "left",
+    "hobbies": [
+      "Board Games (Catan, Splendor, Avalon, Mah-jong, etc.)",
+      "Drinking Beer & Spirits (Rum & Whiskey is my favorite)",
+      "Minimalist Lifestyle"
+    ],
+    "achievements": [
+      "President of the board game club at UCSD",
+      "9th place in grand final of UC Maj-jooh League Tournament"
+    ]
+  },
+  {
+    "id": "4",
+    "period": "2025-Present",
+    "stage": "Early Career",
+    "side": "right",
+    "hobbies": [
+      "Gym & Swimming",
+      "Traveling & Photography",
+      "Cosplaying",
+      "Reviewing Classic Literature & Movies"
+    ],
+    "achievements": []
+  }
+]

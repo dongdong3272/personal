@@ -6,21 +6,15 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home", icon: "🏠" },
-    { path: "/games", label: "Games", icon: "🎮" },
-    { path: "/books", label: "Books", icon: "📚" },
-    { path: "/movies", label: "Movies", icon: "🎬" },
-    { path: "/music", label: "Music", icon: "🎵" },
-    { path: "/travel", label: "Travel", icon: "✈️" },
+    { path: "/library", label: "Library", icon: "📚" },
+    { path: "/cinema", label: "Cinema", icon: "🎬" },
+    { path: "/gallery", label: "Gallery", icon: "📸" },
   ];
 
   return (
     <nav className="navigation">
       <div className="nav-container">
-        <Link to="/" className="nav-logo">
-          <span className="logo-text">DD</span>
-          <span className="logo-subtitle">Personal</span>
-        </Link>
-
+        <div className="nav-name">dongdong</div>
         <ul className="nav-menu">
           {navItems.map((item) => (
             <li key={item.path} className="nav-item">

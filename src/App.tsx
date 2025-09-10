@@ -1,12 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
-import VideoGames from "./pages/VideoGames";
-import Books from "./pages/Books";
-import Movies from "./pages/Movies";
-import Music from "./pages/Music";
-import Travel from "./pages/Travel";
-import "./App.css";
+import Library from "./pages/Library";
+import Gallery from "./pages/Gallery";
+import Cinema from "./pages/Cinema";
 
 function App() {
   return (
@@ -16,11 +13,9 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/games" element={<VideoGames />} />
-            <Route path="/books" element={<Books />} />
-            <Route path="/movies" element={<Movies />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/travel" element={<Travel />} />
+            <Route path="/library" element={<Library />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/cinema" element={<Cinema />} />
           </Routes>
         </main>
       </div>
