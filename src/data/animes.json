@@ -1,0 +1,112 @@
+[
+  {
+    "id": "anime1",
+    "image": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v9_ah.jpg",
+    "title": "Attack on Titan",
+    "year": 2013,
+    "director": "Tetsuro Araki",
+    "description": "",
+    "type": "anime",
+    "genre": "Action, Drama, Fantasy",
+    "rating": 9.5
+  },
+  {
+    "id": "anime2",
+    "image": "https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "title": "Death Note",
+    "year": 2006,
+    "director": "Tetsuro Araki",
+    "description": "",
+    "type": "anime",
+    "genre": "Psychological Thriller, Supernatural",
+    "rating": 9.2
+  },
+  {
+    "id": "anime3",
+    "image": "https://m.media-amazon.com/images/M/MV5BZjI1YjZiMDUtZTI3MC00YTA5LWIzMmMtZmQ0NTZiYWM4NTYwXkEyXkFqcGc@._V1_.jpg",
+    "title": "Steins;Gate",
+    "year": 2011,
+    "director": "Hiroshi Hamasaki",
+    "description": "",
+    "type": "anime",
+    "genre": "Sci-Fi, Thriller, Drama",
+    "rating": 9.4
+  },
+  {
+    "id": "anime4",
+    "image": "https://m.media-amazon.com/images/M/MV5BZTI4ZGMxN2UtODlkYS00MTBjLWE1YzctYzc3NDViMGI0ZmJmXkEyXkFqcGc@._V1_.jpg",
+    "title": "Frieren: Beyond Journey's End",
+    "year": 2023,
+    "director": "Keiichiro Saito",
+    "description": "",
+    "type": "anime",
+    "genre": "Fantasy, Drama, Adventure",
+    "rating": 9.3
+  },
+  {
+    "id": "anime5",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWUwNDFiNjQtYjQ0MC00MTcxLWE0MGQtNTdkYTlhZGU2NDFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "title": "Violet Evergarden",
+    "year": 2018,
+    "director": "Taichi Ishidate",
+    "description": "",
+    "type": "anime",
+    "genre": "Drama, Fantasy, Romance",
+    "rating": 9.2
+  },
+  {
+    "id": "anime6",
+    "image": "https://i.ebayimg.com/images/g/SG4AAOSwkT1lThCO/s-l1200.jpg",
+    "title": "Neon Genesis Evangelion",
+    "year": 1995,
+    "director": "Hideaki Anno",
+    "description": "",
+    "type": "anime",
+    "genre": "Mecha, Psychological, Drama",
+    "rating": 9.3
+  },
+  {
+    "id": "anime7",
+    "image": "https://pics.filmaffinity.com/Odd_Taxi_TV_Series-498618219-large.jpg",
+    "title": "Odd Taxi",
+    "year": 2021,
+    "director": "Baku Kinoshita",
+    "description": "",
+    "type": "anime",
+    "genre": "Mystery, Thriller, Comedy",
+    "rating": 9.0
+  },
+  {
+    "id": "anime8",
+    "image": "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "year": 2021,
+    "director": "Manabu Okamoto",
+    "description": "",
+    "type": "anime",
+    "genre": "Fantasy, Adventure, Drama",
+    "rating": 9.0
+  },
+  {
+    "id": "anime9",
+    "image": "https://www.arthipo.com/image/cache/catalog/poster/anime/1-699/anime313-fate-zero-poster-7-783x1100.webp",
+    "title": "Fate/Zero",
+    "year": 2011,
+    "director": "Ei Aoki",
+    "description": "",
+    "type": "anime",
+    "genre": "Action, Fantasy, Supernatural",
+    "rating": 8.9
+  },
+  {
+    "id": "anime10",
+    "image": "https://m.media-amazon.com/images/M/MV5BOTY0ZGMwZmEtNDVmMy00OWJmLWFlNjEtMGZkNTdlN2EzOWVmXkEyXkFqcGc@._V1_.jpg",
+    "title": "Berserk",
+    "year": 1997,
+    "director": "Naohito Takahashi",
+    "description": "",
+    "type": "anime",
+    "genre": "Dark Fantasy, Action, Drama",
+    "rating": 9.1
+  }
+]

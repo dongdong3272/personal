@@ -1,0 +1,168 @@
+[
+  {
+    "id": "book1",
+    "image": "https://isbncoverdb.com/images/book-cover-book163640.webp",
+    "title": "红楼梦",
+    "year": 1791,
+    "author": "曹雪芹",
+    "description": "",
+    "type": "book",
+    "genre": "Family Saga",
+    "rating": 9.5
+  },
+  {
+    "id": "book2",
+    "image": "https://covers.libro.fm/9798347973149_1120.jpg",
+    "title": "京华烟云",
+    "year": 1939,
+    "author": "林语堂",
+    "description": "",
+    "type": "book",
+    "genre": "Historical Fiction",
+    "rating": 9.1
+  },
+  {
+    "id": "book3",
+    "image": "https://www.chinesepen.org/wp-content/uploads/2022/03/%E7%99%BD%E9%B9%BF%E5%8E%9F1.jpg",
+    "title": "白鹿原",
+    "year": 1993,
+    "author": "陈忠实",
+    "description": "",
+    "type": "book",
+    "genre": "Historical Fiction",
+    "rating": 9.2
+  },
+  {
+    "id": "book4",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1592224510i/54081745.jpg",
+    "title": "平凡的世界",
+    "year": 1986,
+    "author": "路遥",
+    "description": "",
+    "type": "book",
+    "genre": "Realist Fiction",
+    "rating": 9.4
+  },
+  {
+    "id": "book5",
+    "image": "https://ik.imagekit.io/panmac/tr:di-placeholder_portrait_aMjPtD9YZ.jpg,tr:w-350,f-jpg,pr-true/edition/9781529091410.jpg",
+    "title": "Gone with the Wind",
+    "year": 1936,
+    "author": "Margaret Mitchell",
+    "description": "",
+    "type": "book",
+    "genre": "Historical Fiction",
+    "rating": 9.3
+  },
+  {
+    "id": "book6",
+    "image": "https://wfqqreader-1252317822.image.myqcloud.com/cover/457/22946457/t6_22946457.jpg",
+    "title": "围城",
+    "year": 1947,
+    "author": "钱钟书",
+    "description": "",
+    "type": "book",
+    "genre": "Satirical Fiction",
+    "rating": 9.0
+  },
+  {
+    "id": "book7",
+    "image": "https://s.eslite.com/upload/product/2680342546008/o/B9137%E9%86%9C%E9%99%8B%E7%9A%84%E4%B8%AD%E5%9C%8B%E4%BA%BAS.jpg",
+    "title": "丑陋的中国人",
+    "year": 1985,
+    "author": "柏杨",
+    "description": "",
+    "type": "book",
+    "genre": "Social Criticism",
+    "rating": 8.8
+  },
+  {
+    "id": "book8",
+    "image": "https://pansci.asia/wp-content/uploads/2022/06/montvok_460x580.jpg",
+    "title": "蛙",
+    "year": 2009,
+    "author": "莫言",
+    "description": "",
+    "type": "book",
+    "genre": "Magical Realism",
+    "rating": 8.9
+  },
+  {
+    "id": "book9",
+    "image": "https://books.l3zc.com/cover/2/og?c=1687285064",
+    "title": "白夜行",
+    "year": 1999,
+    "author": "東野圭吾",
+    "description": "",
+    "type": "book",
+    "genre": "Mystery",
+    "rating": 8.6
+  },
+  {
+    "id": "book10",
+    "image": "https://images.booksense.com/images/701/420/9780062420701.jpg",
+    "title": "To Kill a Mockingbird",
+    "year": 1960,
+    "author": "Harper Lee",
+    "description": "",
+    "type": "book",
+    "genre": "Southern Gothic",
+
+    "rating": 9.0
+  },
+  {
+    "id": "book11",
+    "image": "https://cdn.kobo.com/book-images/6f6a5479-90e9-4d8b-a6af-f31caf4e345b/1200/1200/False/SHA96h83KjaSygBncS5AZQ.jpg",
+    "title": "天龙八部",
+    "year": 1963,
+    "author": "金庸",
+    "description": "",
+    "type": "book",
+    "genre": "Wuxia Fiction",
+    "rating": 8.5
+  },
+  {
+    "id": "book12",
+    "image": "https://www.unionbook.com.sg/cdn/shop/products/download_d241c68f-9570-4c07-bf40-965fd3485f7a.jpg?v=1622820242",
+    "title": "活着",
+    "year": 1993,
+    "author": "余华",
+    "description": "",
+    "type": "book",
+    "genre": "Realist Fiction",
+    "rating": 8.8
+  },
+  {
+    "id": "book13",
+    "image": "https://covers.openlibrary.org/b/id/10246665-L.jpg",
+    "title": "三体",
+    "year": 2006,
+    "author": "刘慈欣",
+    "description": "",
+    "type": "book",
+    "genre": "Science Fiction",
+    "rating": 8.9
+  },
+  {
+    "id": "book14",
+    "image": "https://media.s-bol.com/Nn6gx723pLq2/oL3vEk/550x777.jpg",
+    "title": "La Dame aux camélias",
+    "year": 1848,
+    "author": "Alexandre Dumas fils",
+    "description": "",
+    "type": "book",
+    "genre": "Romance",
+    "rating": 8.7
+  },
+  {
+    "id": "book15",
+    "image": "https://cdn.kobo.com/book-images/f37f5bc2-8171-475a-99fb-2f807813e085/1200/1200/False/the-great-gatsby-deluxe-hardbound-edition.jpg",
+    "title": "The Great Gatsby",
+    "year": 1925,
+    "author": "F. Scott Fitzgerald",
+    "description": "",
+    "type": "book",
+    "genre": "Literary Fiction",
+    "rating": 8.8
+  }
+]

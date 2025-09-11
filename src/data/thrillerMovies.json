@@ -1,0 +1,167 @@
+[
+  {
+    "id": "thriller1",
+    "image": "https://play-lh.googleusercontent.com/lrDTJU_tTz9FefyFjcW571Tf4G_57ofuY9BSk_8KVfvt6RTRCrQMGtSNAmYrLHNzkezFNQ",
+    "title": "Shutter Island",
+    "year": "2010",
+    "director": "Martin Scorsese",
+    "description": "",
+    "type": "movie",
+    "genre": "Psychological Thriller",
+    "rating": 9.5
+  },
+  {
+    "id": "thriller2",
+    "image": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "title": "Fight Club",
+    "year": "1999",
+    "director": "David Fincher",
+    "description": "",
+    "type": "movie",
+    "genre": "Psychological Thriller",
+    "rating": 9.4
+  },
+  {
+    "id": "thriller3",
+    "image": "https://miro.medium.com/0*W26NfDzuH3rta-SP.jpg",
+    "title": "The Prestige",
+    "year": "2006",
+    "director": "Christopher Nolan",
+    "description": "",
+    "type": "movie",
+    "genre": "Mystery Thriller",
+    "rating": 9.3
+  },
+  {
+    "id": "thriller4",
+    "image": "https://m.media-amazon.com/images/M/MV5BZDlmMWIyOTQtNWEyOC00ZmUyLTgzMDUtMDI0NzRmN2ZmNzVkXkEyXkFqcGc@._V1_.jpg",
+    "title": "Catch Me If You Can",
+    "year": "2002",
+    "director": "Steven Spielberg",
+    "description": "",
+    "type": "movie",
+    "genre": "Crime Thriller",
+    "rating": 8.7
+  },
+  {
+    "id": "thriller5",
+    "image": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p31722_p_v8_ab.jpg",
+    "title": "Butterfly Effect",
+    "year": "2004",
+    "director": "Eric Bress, J. Mackye Gruber",
+    "description": "",
+    "type": "movie",
+    "genre": "Sci-Fi Thriller",
+    "rating": 8.9
+  },
+  {
+    "id": "thriller6",
+    "image": "https://web-cf-image.cjenm.com/crop/660x950/public/share/metamng/programs/memoriesofmurder-movie-poster-en-001-38.jpg?v=1691047344",
+    "title": "Memories of Murder",
+    "year": "2003",
+    "director": "Bong Joon-ho",
+    "description": "",
+    "type": "movie",
+    "genre": "Crime Thriller",
+    "rating": 8.9
+  },
+  {
+    "id": "thriller7",
+    "image": "https://i0.wp.com/ronitjauthor.com/wp-content/uploads/2025/04/Coherence-2013-film-poster.webp?resize=812%2C1200&ssl=1",
+    "title": "Coherence",
+    "year": "2013",
+    "director": "James Ward Byrkit",
+    "description": "",
+    "type": "movie",
+    "genre": "Sci-Fi Thriller",
+    "rating": 9.2
+  },
+  {
+    "id": "thriller8",
+    "image": "https://m.media-amazon.com/images/I/912AErFSBHL._UF1000,1000_QL80_.jpg",
+    "title": "Inception",
+    "year": "2010",
+    "director": "Christopher Nolan",
+    "description": "",
+    "type": "movie",
+    "genre": "Sci-Fi Thriller",
+    "rating": 9.3
+  },
+  {
+    "id": "thriller9",
+    "image": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23611_p_v8_ah.jpg",
+    "title": "The sixth sense",
+    "year": "1999",
+    "director": "M. Night Shyamalan",
+    "description": "",
+    "type": "movie",
+    "genre": "Supernatural Thriller",
+    "rating": 9.0
+  },
+  {
+    "id": "thriller10",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTc0MjgyNTUyNF5BMl5BanBnXkFtZTcwNDQzMDg0Nw@@._V1_.jpg",
+    "title": "Witness of the Prosecution",
+    "year": "1957",
+    "director": "Billy Wilder",
+    "description": "",
+    "type": "movie",
+    "genre": "Legal Thriller",
+    "rating": 8.9
+  },
+  {
+    "id": "thriller11",
+    "image": "https://m.media-amazon.com/images/S/pv-target-images/6fd3cc5280877efa3b38a85840c3fc6d637cfbf8fb86e0f6908d7588bbfef6ab.jpg",
+    "title": "Identity",
+    "year": "2003",
+    "director": "James Mangold",
+    "description": "",
+    "type": "movie",
+    "genre": "Psychological Thriller",
+    "rating": 9.0
+  },
+  {
+    "id": "thriller12",
+    "image": "https://play-lh.googleusercontent.com/yUe9RauhYuCNthQZ5DMAJxi-nu-m9Jby18POrTvaaNPcVPySMCKDrDKw4En8NhRO3Bmw01mvU0N7w-c6VF0",
+    "title": "Das Leben der Anderen",
+    "year": "2006",
+    "director": "Florian Henckel von Donnersmarck",
+    "description": "",
+    "type": "movie",
+    "genre": "Political Thriller",
+    "rating": 9.2
+  },
+  {
+    "id": "thriller13",
+    "image": "https://mizixing.com/wp-content/uploads/2025/03/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250302003244.jpg",
+    "title": "无间道",
+    "year": "2002",
+    "director": "Andrew Lau, Alan Mak",
+    "description": "",
+    "type": "movie",
+    "genre": "Crime Thriller",
+    "rating": 9.3
+  },
+  {
+    "id": "thriller14",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTk0MDQwNTM4Nl5BMl5BanBnXkFtZTgwMTc3MDE0MjE@._V1_FMjpg_UX1000_.jpg",
+    "title": "No Mercy",
+    "year": "2010",
+    "director": "Kim Hyeong-jun",
+    "description": "",
+    "type": "movie",
+    "genre": "Crime Thriller",
+    "rating": 8.8
+  },
+  {
+    "id": "thriller15",
+    "image": "https://images.jdmagicbox.com/comp/jd_social/news/2018jul09/image-19313-oyhv8k9kdd.jpg",
+    "title": "Memento",
+    "year": "2000",
+    "director": "Christopher Nolan",
+    "description": "",
+    "type": "movie",
+    "genre": "Psychological Thriller",
+    "rating": 8.9
+  }
+]

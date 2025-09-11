@@ -1,0 +1,112 @@
+[
+  {
+    "id": "other1",
+    "image": "https://s.eslite.com/b2b/newItem/2025/04/24/2456_163517286_245_mainCoverImage1.jpg",
+    "title": "霸王别姬",
+    "year": 1993,
+    "director": "陈凯歌",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 9.5
+  },
+  {
+    "id": "other2",
+    "image": "https://i1.sndcdn.com/artworks-DQEZrSzrXsztlU8W-WeUzzw-t500x500.jpg",
+    "title": "Forrest Gump",
+    "year": 1994,
+    "director": "Robert Zemeckis",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 9.2
+  },
+  {
+    "id": "other3",
+    "image": "https://goldendiscs.ie/cdn/shop/products/MM00269485.jpg?v=1690917989",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 9.1
+  },
+  {
+    "id": "other4",
+    "image": "https://cdn-images.dzcdn.net/images/cover/5a02690056ec7f97030788109498ac5a/0x1900-000000-80-0-0.jpg",
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "description": "",
+    "type": "movie",
+    "genre": "Sci-Fi",
+    "rating": 9.4
+  },
+  {
+    "id": "other5",
+    "image": "https://m.media-amazon.com/images/I/91eicG9oMWL._UF894,1000_QL80_.jpg",
+    "title": "Roman Holiday",
+    "year": 1953,
+    "director": "William Wyler",
+    "description": "",
+    "type": "movie",
+    "genre": "Romance",
+    "rating": 9.3
+  },
+  {
+    "id": "other6",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
+    "title": "Schindler's List",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 9.0
+  },
+  {
+    "id": "other7",
+    "image": "https://storage.googleapis.com/pod_public/1300/262808.jpg",
+    "title": "The Truman Show",
+    "year": 1998,
+    "director": "Peter Weir",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 8.8
+  },
+  {
+    "id": "other8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/It%27s_a_Wonderful_Life_%281946_poster%29.jpeg/960px-It%27s_a_Wonderful_Life_%281946_poster%29.jpeg",
+    "title": "It's a Wonderful Life",
+    "year": 1946,
+    "director": "Frank Capra",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 9.3
+  },
+  {
+    "id": "other9",
+    "image": "https://upload.wikimedia.org/wikipedia/zh/b/be/Hachi_poster.jpg",
+    "title": "八公犬物语",
+    "year": 1987,
+    "director": "神山征二郎",
+    "description": "",
+    "type": "movie",
+    "genre": "Drama",
+    "rating": 9.1
+  },
+  {
+    "id": "other10",
+    "image": "https://m.media-amazon.com/images/M/MV5BYWRlZjcwYTgtYWJkOS00MGYwLTk3Y2ItNmU4NTg5Nzg2YTQ2XkEyXkFqcGc@._V1_.jpg",
+    "title": "Love Actually",
+    "year": 2003,
+    "director": "Richard Curtis",
+    "description": "",
+    "type": "movie",
+    "genre": "Romance",
+    "rating": 8.9
+  }
+]

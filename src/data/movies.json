@@ -1,0 +1,72 @@
+[
+  {
+    "id": "movie1",
+    "image": "https://images.unsplash.com/photo-1489599904178-85d80ac5e2e6?w=300&h=400&fit=crop",
+    "title": "Your Name",
+    "year": 2016,
+    "director": "Makoto Shinkai",
+    "description": "A teenage boy and girl embark on a quest to meet each other for the first time after constantly swapping bodies.",
+    "type": "anime",
+    "genre": "Romance/Drama",
+    "rating": 8.2,
+    "reviewLink": "https://example.com/review1"
+  },
+  {
+    "id": "movie2",
+    "image": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=300&h=400&fit=crop",
+    "title": "Inception",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "description": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "type": "movie",
+    "genre": "Sci-Fi/Thriller",
+    "rating": 8.8,
+    "reviewLink": "https://example.com/review2"
+  },
+  {
+    "id": "movie3",
+    "image": "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=300&h=400&fit=crop",
+    "title": "Spirited Away",
+    "year": 2001,
+    "director": "Hayao Miyazaki",
+    "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits.",
+    "type": "anime",
+    "genre": "Adventure/Fantasy",
+    "rating": 9.0,
+    "reviewLink": "https://example.com/review3"
+  },
+  {
+    "id": "movie4",
+    "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=300&h=400&fit=crop",
+    "title": "Parasite",
+    "year": 2019,
+    "director": "Bong Joon-ho",
+    "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+    "type": "movie",
+    "genre": "Thriller/Drama",
+    "rating": 8.6
+  },
+  {
+    "id": "movie5",
+    "image": "https://images.unsplash.com/photo-1478720568477-b0ac8e09552c?w=300&h=400&fit=crop",
+    "title": "Attack on Titan",
+    "year": 2013,
+    "director": "Wit Studio",
+    "description": "Humanity fights for survival against giant humanoid Titans that have brought civilization to the brink of extinction.",
+    "type": "anime",
+    "genre": "Action/Drama",
+    "rating": 9.0
+  },
+  {
+    "id": "movie6",
+    "image": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=300&h=400&fit=crop",
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "type": "movie",
+    "genre": "Sci-Fi/Drama",
+    "rating": 8.6,
+    "reviewLink": "https://example.com/review6"
+  }
+]

@@ -1,13 +1,19 @@
 import heroImage from "../assets/personal_photos/index.jpg";
+import YearlyGoals, { type YearlyGoalItem } from "../components/YearlyGoals";
 import InfoCard, { type InfoCardProps } from "../components/InfoCard";
 import Timeline, { type TimelineItem } from "../components/Timeline";
+
 import infoCardsData from "../data/infoCards.json";
 import timelineData from "../data/timeline.json";
+import yearlyGoalsData from "../data/yearlyGoals.json";
+
 import "./Home.css";
 
 const Home = () => {
   const typedTimelineData: TimelineItem[] = timelineData as TimelineItem[];
   const typedInfoCardsData: InfoCardProps[] = infoCardsData as InfoCardProps[];
+  const typedYearlyGoalsData: YearlyGoalItem[] =
+    yearlyGoalsData as YearlyGoalItem[];
 
   return (
     <div className="home-page">
@@ -61,6 +67,20 @@ const Home = () => {
             </p>
           </div>
           <Timeline items={typedTimelineData} />
+        </div>
+      </section>
+
+      {/* 2025 Yearly Goal Section */}
+      <section className="yearly-goal-section">
+        <div className="page-container">
+          <div className="section-header">
+            <h2 className="section-title">2025 Vision</h2>
+            <p className="section-subtitle">
+              The destination that guides every step of this journey
+            </p>
+          </div>
+
+          <YearlyGoals goals={typedYearlyGoalsData} />
         </div>
       </section>
     </div>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "goal-01",
+    "number": "01",
+    "title": "Build My Own Photo Album",
+    "description": "Memerize the beautiful moments in my life"
+  },
+  {
+    "id": "goal-02",
+    "number": "02",
+    "title": "Read & Watch Classics",
+    "description": "Finish five classic books and twenty classic movies."
+  },
+  {
+    "id": "goal-03",
+    "number": "03",
+    "title": "Talk Less, Think More",
+    "description": "Figure out who I am and what I trully want to do."
+  },
+  {
+    "id": "goal-04",
+    "number": "04",
+    "title": "Be a Good Cosplayer",
+    "description": "Learn how to dress up, do makeup, and pose for photos."
+  },
+  {
+    "id": "goal-05",
+    "number": "05",
+    "title": "Build a Strong Body",
+    "description": "Build a strong, well-defined chest and abs"
+  }
+]

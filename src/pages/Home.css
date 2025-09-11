@@ -255,33 +255,19 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: #ffffff; /* White background for images that don't fill container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Cover entire container while maintaining aspect ratio */
   object-position: center;
   transition: transform 0.3s ease;
   filter: brightness(0.8) contrast(1.1) saturate(1.1);
-  mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 60%,
-    rgba(0, 0, 0, 0.8) 75%,
-    rgba(0, 0, 0, 0.4) 85%,
-    rgba(0, 0, 0, 0.1) 95%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  -webkit-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 60%,
-    rgba(0, 0, 0, 0.8) 75%,
-    rgba(0, 0, 0, 0.4) 85%,
-    rgba(0, 0, 0, 0.1) 95%,
-    rgba(0, 0, 0, 0) 100%
-  );
 }
 
 .hero-image:hover {
@@ -381,6 +367,52 @@
   padding: 0 2rem;
 }
 
+/* Media Grid for MediaCard components */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 3;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  justify-items: center;
+}
+
+/* Subsection styles for Cinema page */
+.subsection {
+  margin-bottom: 4rem;
+}
+
+.subsection-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: "Georgia", "Times New Roman", serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.empty-section {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* 2025 Yearly Goal Section */
+.yearly-goal-section {
+  padding: 5rem 0;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
 /* Timeline Section */
 .timeline-section {
   padding: 6rem 0;
@@ -424,6 +456,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
   }
+
+  .media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+  }
 }
 
 /* Medium tablets */
@@ -431,6 +468,12 @@
   .info-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
+    padding: 0 1.5rem;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
     padding: 0 1.5rem;
   }
 
@@ -482,6 +525,12 @@
     gap: 1rem;
     padding: 0 1.5rem;
   }
+
+  .media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    padding: 0 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -513,6 +562,12 @@
   }
 
   .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .media-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 0 1rem;

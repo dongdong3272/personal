@@ -1,0 +1,397 @@
+/* YearlyGoals Component Styles */
+.goals-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.goals-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.goals-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 30%,
+    rgba(120, 119, 198, 0.05) 70%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 24px;
+}
+
+.goals-card:hover {
+  transform: translateY(-12px) scale(1.01);
+  border-color: rgba(255, 215, 0, 0.4);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.15);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.goals-card:hover::before {
+  opacity: 1;
+}
+
+.goals-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.goal-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+  transition: all 0.4s ease;
+}
+
+.goals-card:hover .goal-icon {
+  transform: scale(1.1) rotate(10deg);
+  filter: drop-shadow(0 12px 24px rgba(255, 215, 0, 0.2));
+}
+
+.goals-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.goals-list {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2.5rem;
+}
+
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.goal-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 215, 0, 0.05) 0%,
+    transparent 50%,
+    rgba(120, 119, 198, 0.03) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.goal-item:hover {
+  transform: translateX(8px);
+  border-color: rgba(255, 215, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.goal-item:hover::before {
+  opacity: 1;
+}
+
+.goal-item:last-child {
+  margin-bottom: 0;
+}
+
+.goal-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 215, 0, 0.9);
+  font-family: "Georgia", "Times New Roman", serif;
+  text-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  min-width: 40px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.goal-item:hover .goal-number {
+  color: rgba(255, 215, 0, 1);
+  transform: scale(1.1);
+  text-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
+}
+
+.goal-content {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.goal-item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.goal-item-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.goal-accent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.goal-year {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(255, 215, 0, 0.9);
+  text-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  font-family: "Georgia", "Times New Roman", serif;
+  transition: all 0.3s ease;
+}
+
+.goals-card:hover .goal-year {
+  color: rgba(255, 215, 0, 1);
+  text-shadow: 0 6px 18px rgba(255, 215, 0, 0.5);
+  transform: scale(1.05);
+}
+
+.goal-divider {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  border-radius: 1px;
+}
+
+.goal-motto {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Design */
+/* Medium tablets */
+@media (max-width: 900px) {
+  .goals-card {
+    padding: 2.5rem;
+  }
+
+  .goals-title {
+    font-size: 1.8rem;
+  }
+
+  .goal-item {
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .goal-item-title {
+    font-size: 1.2rem;
+  }
+
+  .goal-item-text {
+    font-size: 0.95rem;
+  }
+
+  .goal-number {
+    font-size: 1.3rem;
+  }
+
+  .goal-year {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile and small tablets */
+@media (max-width: 768px) {
+  .goals-container {
+    padding: 0 1.5rem;
+  }
+
+  .goals-card {
+    padding: 2rem;
+  }
+
+  .goals-header {
+    margin-bottom: 2rem;
+  }
+
+  .goal-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .goals-title {
+    font-size: 1.6rem;
+  }
+
+  .goals-list {
+    margin-bottom: 2rem;
+  }
+
+  .goal-item {
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .goal-item-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .goal-item-text {
+    font-size: 0.9rem;
+  }
+
+  .goal-number {
+    font-size: 1.2rem;
+    min-width: 35px;
+  }
+
+  .goal-accent {
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .goal-year {
+    font-size: 2rem;
+  }
+
+  .goal-divider {
+    height: 30px;
+  }
+
+  .goal-motto {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .goals-container {
+    padding: 0 1rem;
+  }
+
+  .goals-card {
+    padding: 1.5rem;
+  }
+
+  .goals-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .goal-icon {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .goals-title {
+    font-size: 1.4rem;
+  }
+
+  .goals-list {
+    margin-bottom: 1.5rem;
+  }
+
+  .goal-item {
+    padding: 0.8rem;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .goal-item-title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .goal-item-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .goal-number {
+    font-size: 1rem;
+    min-width: 30px;
+  }
+
+  .goal-accent {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+  }
+
+  .goal-year {
+    font-size: 1.8rem;
+  }
+
+  .goal-divider {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+  }
+
+  .goal-motto {
+    font-size: 0.8rem;
+  }
+}
