@@ -23,7 +23,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
         <p className="card-value">{value}</p>
-        <span className="card-description">{description}</span>
+        <p className="card-description">{description}</p>
       </div>
     </div>
   );

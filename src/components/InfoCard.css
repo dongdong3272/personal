@@ -111,6 +111,7 @@
   color: rgba(255, 255, 255, 0.7);
   font-style: italic;
   font-weight: 300;
+  line-height: 1.4;
 }
 
 /* Responsive Design */
@@ -137,24 +138,39 @@
 
 @media (max-width: 480px) {
   .info-card {
-    padding: 1rem;
-    min-height: 110px;
+    padding: 0.6rem;
+    min-height: 85px;
+    border-radius: 10px;
   }
 
   .card-icon {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    margin-left: -0.2rem;
+    margin-top: -0.5rem;
   }
 
-  .card-value {
-    font-size: 1rem;
-  }
-
-  .card-description {
-    font-size: 0.75rem;
+  .card-content {
+    margin-top: -0.8rem;
   }
 
   .card-title {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.3px;
+  }
+
+  .card-value {
+    font-size: 0.6rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0rem;
+  }
+
+  .card-description {
+    margin-top: 2rem;
+    font-size: 0.55rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
   }
 }

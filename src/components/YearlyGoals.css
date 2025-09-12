@@ -324,11 +324,12 @@
 
 @media (max-width: 480px) {
   .goals-container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
   .goals-card {
     padding: 1.5rem;
+    border-radius: 20px;
   }
 
   .goals-header {
@@ -341,47 +342,50 @@
   }
 
   .goals-title {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
   }
 
   .goals-list {
-    margin-bottom: 1.5rem;
-  }
-
-  .goal-item {
-    padding: 0.8rem;
-    gap: 0.8rem;
     margin-bottom: 1.2rem;
   }
 
+  .goal-item {
+    padding: 0.6rem;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+    border-radius: 10px;
+  }
+
   .goal-item-title {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.1px;
   }
 
   .goal-item-text {
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 0.7rem;
+    line-height: 1.3;
   }
 
   .goal-number {
-    font-size: 1rem;
-    min-width: 30px;
+    font-size: 0.9rem;
+    min-width: 25px;
   }
 
   .goal-accent {
     flex-direction: column;
-    gap: 0.8rem;
-    margin-top: 1.2rem;
-    padding-top: 1rem;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
   }
 
   .goal-year {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .goal-divider {
-    width: 40px;
+    width: 30px;
     height: 2px;
     background: linear-gradient(
       to right,
@@ -392,6 +396,7 @@
   }
 
   .goal-motto {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.3px;
   }
 }
