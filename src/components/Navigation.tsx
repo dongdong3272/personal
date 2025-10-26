@@ -9,6 +9,7 @@ const Navigation = () => {
     { path: "/library", label: "Library", icon: "📚" },
     { path: "/cinema", label: "Cinema", icon: "🎬" },
     { path: "/gallery", label: "Gallery", icon: "📸" },
+    { path: "/writings", label: "Writings", icon: "✍️" },
   ];
 
   return (

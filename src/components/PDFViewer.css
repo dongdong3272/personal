@@ -1,0 +1,29 @@
+.pdf-viewer {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.pdf-iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+}
+
+.pdf-viewer-fallback {
+  margin-top: 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.download-link {
+  color: #7877c6;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.download-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

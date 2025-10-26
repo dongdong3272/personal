@@ -1,0 +1,87 @@
+.writing-detail-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #1a1a2e 0%,
+    #16213e 25%,
+    #0f3460 50%,
+    #16213e 75%,
+    #1a1a2e 100%
+  );
+  padding-top: 100px; /* Account for fixed navigation */
+}
+
+.writing-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.writing-header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
+
+.writing-detail-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.writing-detail-date {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.writing-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #ffffff;
+}
+
+.writing-not-found h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.writing-not-found p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .writing-detail {
+    padding: 1rem;
+  }
+
+  .writing-detail-title {
+    font-size: 2rem;
+  }
+
+  .writing-header {
+    margin-bottom: 1.5rem;
+  }
+}

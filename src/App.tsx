@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Library from "./pages/Library";
 import Gallery from "./pages/Gallery";
 import Cinema from "./pages/Cinema";
+import Writings from "./pages/Writings";
+import WritingDetail from "./pages/WritingDetail";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/library" element={<Library />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/cinema" element={<Cinema />} />
+            <Route path="/writings" element={<Writings />} />
+            <Route path="/writings/:id" element={<WritingDetail />} />
           </Routes>
         </main>
       </div>

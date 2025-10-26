@@ -652,3 +652,30 @@
   );
   z-index: 3;
 }
+
+/* Writings specific styles */
+.no-writings {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  margin-top: 2rem;
+}
+
+.no-writings p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.no-writings p:last-child {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.format-example {
+  font-size: 0.85rem !important;
+  color: rgba(120, 119, 198, 0.8) !important;
+  font-style: italic;
+}
