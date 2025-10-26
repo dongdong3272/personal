@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/personal/",
+  publicDir: "public", // This ensures files in public/ are copied to dist/
 });
