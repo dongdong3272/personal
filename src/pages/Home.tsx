@@ -74,7 +74,7 @@ const Home = () => {
       <section className="yearly-goal-section">
         <div className="page-container">
           <div className="section-header">
-            <h2 className="section-title">2025 Vision</h2>
+            <h2 className="section-title">2026 Vision</h2>
             <p className="section-subtitle">
               The destination that guides every step of this journey
             </p>

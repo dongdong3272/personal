@@ -16,7 +16,7 @@ interface YearlyGoalsProps {
 
 const YearlyGoals: React.FC<YearlyGoalsProps> = ({
   goals,
-  year = "2025",
+  year = "2026",
   motto = "Progress over Perfection",
 }) => {
   return (

@@ -1,18 +1,17 @@
 [
   {
     "id": "1",
-    "period": "2016-2019",
-    "stage": "High School Era",
+    "period": "2013-2019",
+    "stage": "High School",
     "side": "left",
     "hobbies": [
-      "Running & Soccer",
-      "Reading Classic Literature",
-      "Studying Physics Olympiad (Love Relativity Theory the most)"
+      "Distance running & soccer",
+      "Classic literature",
+      "Participating in three major academic competitions: Math, Physics, and Informatics Olympiads"
     ],
     "achievements": [
-      "Football team starting players",
-      "First prize in Chinese Physics Olympiad (35th)",
-      "Bronze medal of 1,500m for three consecutive years"
+      "CMO Silver Medal · CPhO First Prize · NOI Second Prize",
+      "1500m over 6 years: 3 silver & 3 bronze"
     ]
   },
   {
@@ -56,7 +55,8 @@
       "Gym & Swimming",
       "Traveling & Photography",
       "Cosplaying",
-      "Reviewing Classic Literature & Movies"
+      "Novels & Movies",
+      "Writing"
     ],
     "achievements": []
   }
