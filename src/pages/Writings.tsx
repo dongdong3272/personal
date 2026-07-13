@@ -44,12 +44,12 @@ const Writings = () => {
           {writings.length === 0 ? (
             <div className="no-writings">
               <p>
-                No writings found. Add some .pdf files to the
+                No writings found. Add some .md files to the
                 /src/data/writings/ folder!
               </p>
-              <p>Use the format: "Title@YYYY-MM-DD@Tags.pdf"</p>
+              <p>Use the format: "Title@YYYY-MM-DD@Tags.md"</p>
               <p className="format-example">
-                Example: "My Essay@2024-10-26@Personal,Reflection.pdf"
+                Example: "My Essay@2024-10-26@Personal,Reflection.md"
               </p>
             </div>
           ) : (

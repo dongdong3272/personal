@@ -392,13 +392,13 @@
 
 @media (max-width: 480px) {
   .timeline-container {
-    padding: 1rem 2rem 1rem 1rem;
-    max-width: 390px;
+    padding: 1rem 1rem 1rem 0.75rem;
+    max-width: none;
     margin: 0 auto;
   }
 
   .timeline-line {
-    left: 2.5rem;
+    left: 1.25rem;
     width: 3px;
   }
 
@@ -407,9 +407,9 @@
   }
 
   .timeline-dot {
-    left: 1.5rem;
-    width: 20px;
-    height: 20px;
+    left: 1.25rem;
+    width: 18px;
+    height: 18px;
     border-width: 2px;
   }
 
@@ -419,9 +419,9 @@
   }
 
   .timeline-content {
-    width: calc(100% - 3.5rem);
-    padding-left: 1.5rem !important;
-    padding-right: 0.5rem !important;
+    width: calc(100% - 2.75rem);
+    padding-left: 1.25rem !important;
+    padding-right: 0.25rem !important;
   }
 
   .timeline-card {
@@ -435,13 +435,13 @@
   }
 
   .timeline-period {
-    font-size: 0.9rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
     letter-spacing: 0.3px;
   }
 
   .timeline-stage {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 0.2px;
   }
 
@@ -451,20 +451,20 @@
   }
 
   .timeline-section-title {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     margin-bottom: 0.4rem;
     letter-spacing: 0.3px;
   }
 
   .timeline-list-item {
-    font-size: 0.65rem;
-    line-height: 1.2;
-    padding: 0.2rem 0 0.2rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    padding: 0.25rem 0 0.25rem 1rem;
   }
 
   .timeline-list-item::before {
-    font-size: 0.6rem;
-    top: 0.2rem;
+    font-size: 0.7rem;
+    top: 0.25rem;
   }
 
   /* Ensure left and right alignment is maintained */

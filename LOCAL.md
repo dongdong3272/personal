@@ -57,16 +57,92 @@ http://localhost:5173/personal/
 src/
   pages/          # 各页面：Home / Library / Gallery / Cinema / Writings
   components/     # 导航、时间线、卡片等组件
-  data/           # JSON 数据（书单、电影、时间线、年度目标等）
+  data/           # JSON 数据 + writings/ 下的随笔 (.md，可选 .pdf)
   App.tsx         # 路由
-public/           # 静态资源（图片、PDF 等），构建时原样拷贝
+scripts/          # 本地工具（如 Word → Markdown 导入）
+public/           # 静态资源，构建时原样拷贝
 ```
 
 ### 改内容通常改这里
 
 - 首页信息 / 时间线 / 年度目标：`src/data/*.json`
+- 随笔 / 文章：`src/data/writings/`（见下一节）
 - 页面布局与样式：`src/pages/`、`src/components/`
 - 图片等静态文件：放进 `public/`，代码里用 `/personal/你的文件名` 引用
+
+## 新写一篇随笔 / Review（Word → 网站）
+
+网站正文读的是 **Markdown（`.md`）**，不是 PDF。PDF 只是可选附件（详情页底部的 Download PDF）。
+
+你平时仍用 Word 写、再导出 PDF 发给别人——这没问题。放到网站时，多一步：**用脚本把 `.docx` 转成 `.md`**，不用手抄。
+
+### 推荐工作流
+
+1. **Word 里写完**，文件名按约定起好（和以前 PDF 一样）：
+
+   ```text
+   标题@YYYY-MM-DD@Tag1,Tag2.docx
+   ```
+
+   例子：
+
+   ```text
+   我的父母-杂笔@2025-11-18@Essay,Personal.docx
+   《新世纪福音战士》的时代回响与精神嬗变@2025-11-02@Anime,Review.docx
+   ```
+
+   - 标题、日期、标签会进 frontmatter，也会生成列表页上的卡片信息  
+   - 多个 tag 用英文逗号分隔；尽量不要在 tag 里多空格（`Anime,Review` 比 `Anime, Review` 干净）
+
+2. **（可选）导出 PDF**，文件名与 Word **同名**（只是扩展名不同），方便发给别人，也方便网站提供下载：
+
+   ```text
+   标题@YYYY-MM-DD@Tag1,Tag2.pdf
+   ```
+
+3. **一键导入**（在项目根目录 `d:\PersonalWeb\personal`）：
+
+   ```powershell
+   npm run writings:import -- "e:\随笔\标题@2025-11-18@Essay,Personal.docx"
+   ```
+
+   或直接：
+
+   ```powershell
+   python scripts/import-writing.py "e:\随笔\标题@2025-11-18@Essay,Personal.docx"
+   ```
+
+   脚本会：
+
+   - 把 Word 转成 `src/data/writings/….md`（段落、标题、编号列表 / bullet 会尽量保留）
+   - 若同目录下有同名 `.pdf`（或你用 `--pdf` 指定），一并拷进 `src/data/writings/`
+
+4. **本地预览**：`npm run dev` → 打开 `/personal/writings`，点进新文章看排版。  
+   列表有问题再微调 `.md`（例如某级列表在 Word 里标得不规范时，偶尔要手改两行）。
+
+5. **上线**：`npm run deploy`
+
+### 文件分别干什么
+
+| 文件 | 作用 |
+|------|------|
+| `.md` | **必须有**——网站真正渲染的正文 |
+| `.pdf` | 可选——有同名 PDF 时详情页才显示 Download PDF |
+| `.docx` | 你的原稿，**不必**放进仓库；放 `e:\随笔\` 之类自己的文件夹即可 |
+
+### 为什么不要只丢 PDF？
+
+浏览器 PDF 阅读器和站点 UI 是两套东西（白底文档框、手机上也不好读）。Markdown 才能和站点字体、深色背景、手机排版融在一起。Word → Markdown 用脚本做；**不要指望从 PDF 自动转**（列表、标题很容易糊成一团，你已经见过）。
+
+### 脚本小技巧
+
+```powershell
+# PDF 不在同目录时手动指定
+python scripts/import-writing.py ".\draft.docx" --pdf ".\out.pdf"
+
+# 文件名没按约定时，用参数补元数据（输出文件名仍跟 docx 的 stem）
+python scripts/import-writing.py ".\draft.docx" --title "某标题" --date 2026-03-01 --tags "Essay,Personal"
+```
 
 ## 本地改完要上线时
 

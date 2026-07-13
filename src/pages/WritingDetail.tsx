@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import { WritingsService } from "../services/writingsService";
-import PDFViewer from "../components/PDFViewer";
 import type { Writing } from "../types/writings";
 import { formatDate } from "../utils/dateUtils";
 import "./WritingDetail.css";
@@ -57,7 +57,21 @@ const WritingDetail = () => {
           <p className="writing-detail-date">{formatDate(writing.date)}</p>
         </div>
 
-        <PDFViewer filePath={writing.filePath} title={writing.title} />
+        <article className="writing-article">
+          <ReactMarkdown>{writing.content}</ReactMarkdown>
+        </article>
+
+        {writing.pdfPath && (
+          <div className="writing-download">
+            <a
+              href={writing.pdfPath}
+              download
+              className="writing-download-link"
+            >
+              Download PDF
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

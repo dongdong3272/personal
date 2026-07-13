@@ -1,8 +1,9 @@
 export interface Writing {
-  id: string; // Generated from filename
-  title: string; // Extracted from filename
-  date: string; // Extracted from filename (YYYY-MM-DD)
-  tags: string[]; // Extracted from filename (after second @)
-  fileName: string; // Full filename
-  filePath: string; // Path to file
+  id: string;
+  title: string;
+  date: string; // YYYY-MM-DD
+  tags: string[];
+  fileName: string;
+  content: string; // Markdown body
+  pdfPath?: string; // Optional sibling PDF for download
 }
