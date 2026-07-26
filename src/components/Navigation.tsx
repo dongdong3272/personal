@@ -22,7 +22,14 @@ const Navigation = () => {
               <Link
                 to={item.path}
                 className={`nav-link ${
-                  location.pathname === item.path ? "active" : ""
+                  item.path === "/"
+                    ? location.pathname === "/"
+                      ? "active"
+                      : ""
+                    : location.pathname === item.path ||
+                        location.pathname.startsWith(`${item.path}/`)
+                      ? "active"
+                      : ""
                 }`}
               >
                 <span className="nav-icon">{item.icon}</span>

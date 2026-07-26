@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { WritingsService } from "../services/writingsService";
 import WritingCard from "../components/WritingCard";
+import AtlasCard from "../components/atlas/AtlasCard";
+import { getAtlasIndex } from "../services/atlasService";
 import type { Writing } from "../types/writings";
 import "./Home.css"; // Reuse existing styles
 
 const Writings = () => {
   const [writings, setWritings] = useState<Writing[]>([]);
   const [loading, setLoading] = useState(true);
+  const atlasEntries = getAtlasIndex();
 
   useEffect(() => {
     try {
@@ -59,6 +62,21 @@ const Writings = () => {
               ))}
             </div>
           )}
+        </section>
+
+        <section className="personal-info-section atlas-section">
+          <div className="section-header">
+            <h2 className="section-title">Atlas</h2>
+            <p className="section-subtitle">
+              宏篇巨著人物繁多。Atlas 帮你梳理作品中的人物关系脉络。
+         
+            </p>
+          </div>
+          <div className="atlas-grid">
+            {atlasEntries.map((entry) => (
+              <AtlasCard key={entry.id} entry={entry} />
+            ))}
+          </div>
         </section>
       </div>
     </div>

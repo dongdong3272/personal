@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import Library from "./pages/Library";
+import AtlasGraph from "./pages/AtlasGraph";
 import Gallery from "./pages/Gallery";
 import Cinema from "./pages/Cinema";
 import Writings from "./pages/Writings";
@@ -19,6 +20,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/cinema" element={<Cinema />} />
             <Route path="/writings" element={<Writings />} />
+            <Route path="/writings/atlas/:id" element={<AtlasGraph />} />
             <Route path="/writings/:id" element={<WritingDetail />} />
           </Routes>
         </main>

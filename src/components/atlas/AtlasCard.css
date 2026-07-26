@@ -1,0 +1,111 @@
+.atlas-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.atlas-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(120, 119, 198, 0.18) 0%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.atlas-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(120, 119, 198, 0.55);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(120, 119, 198, 0.2);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.atlas-card:hover::before {
+  opacity: 1;
+}
+
+.atlas-card-title {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+}
+
+.atlas-card-work {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(180, 178, 230, 0.95);
+  z-index: 1;
+}
+
+.atlas-card-subtitle {
+  margin: 0;
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+  z-index: 1;
+}
+
+.atlas-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.atlas-card-cta {
+  color: rgba(190, 188, 245, 0.95);
+  transition: transform 0.2s ease;
+}
+
+.atlas-card:hover .atlas-card-cta {
+  transform: translateX(4px);
+}
+
+.atlas-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0.5rem;
+}
+
+.atlas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .atlas-grid {
+    grid-template-columns: 1fr;
+  }
+}

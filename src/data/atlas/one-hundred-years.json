@@ -1,0 +1,510 @@
+{
+  "id": "one-hundred-years",
+  "title": "布恩迪亚家族",
+  "workTitle": "《百年孤独》· 加西亚·马尔克斯 / 范晔 译",
+  "description": "布恩迪亚七代的血缘、收养、婚姻与恋爱。梅尔基亚德斯、皮埃特罗·克雷斯皮、赫里内勒多·马尔克斯、佩特拉·科特斯等关键人物亦收入图中。",
+  "relationTypes": [
+    {
+      "id": "parent",
+      "label": "亲子",
+      "color": "#6eb5ff",
+      "layout": "descent",
+      "style": "solid",
+      "roles": {
+        "fromSource": { "m": "儿子", "f": "女儿", "default": "子女" },
+        "fromTarget": { "m": "父亲", "f": "母亲", "default": "父母" }
+      }
+    },
+    {
+      "id": "spouse",
+      "label": "婚姻",
+      "color": "#7dcea0",
+      "layout": "union",
+      "style": "solid",
+      "barLabel": "夫妻",
+      "roles": {
+        "either": { "m": "丈夫", "f": "妻子", "default": "配偶" }
+      }
+    },
+    {
+      "id": "lover",
+      "label": "恋爱",
+      "color": "#f1948a",
+      "layout": "union",
+      "style": "dashed",
+      "barLabel": "情人",
+      "roles": {
+        "either": { "default": "情人" }
+      }
+    },
+    {
+      "id": "engaged",
+      "label": "订婚",
+      "color": "#f5cba7",
+      "layout": "union",
+      "style": "dashed",
+      "barLabel": "订婚",
+      "roles": {
+        "either": { "default": "未婚夫/妻" }
+      }
+    },
+    {
+      "id": "adopt",
+      "label": "收养",
+      "color": "#aab7b8",
+      "layout": "descent",
+      "style": "dashed",
+      "barLabel": "收养",
+      "roles": {
+        "fromSource": { "m": "养子", "f": "养女", "default": "养子女" },
+        "fromTarget": { "m": "养父", "f": "养母", "default": "养父母" }
+      }
+    },
+    {
+      "id": "friend",
+      "label": "朋友",
+      "color": "#bb8fce",
+      "layout": "link",
+      "style": "solid",
+      "roles": {
+        "either": { "default": "朋友" }
+      }
+    },
+    {
+      "id": "rival",
+      "label": "对手",
+      "color": "#f5b041",
+      "layout": "link",
+      "style": "solid",
+      "roles": {
+        "either": { "default": "对手" }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "jose_buendia",
+      "name": "何塞·阿尔卡蒂奥·布恩迪亚",
+      "generation": 1,
+      "gender": "m",
+      "importance": 5,
+      "tags": ["族长", "建镇者"],
+      "summary": "马孔多的创建者，家族第一代",
+      "detail": "带领族人建立马孔多。沉迷炼金、科学与探索，晚年被缚于栗树下，在幻想与记忆中耗尽一生。",
+      "keywords": ["马孔多", "冰块", "栗树"],
+      "quote": "世界还太新，许多事物还没有名字，提到的时候尚需用手指指点点。"
+    },
+    {
+      "id": "ursula",
+      "name": "乌尔苏拉·伊瓜朗",
+      "generation": 1,
+      "gender": "f",
+      "importance": 5,
+      "tags": ["族母"],
+      "summary": "家族真正的秩序与记忆，活过百岁",
+      "detail": "以惊人的意志维系布恩迪亚家宅与血脉。恐惧近亲结婚会生出长猪尾巴的孩子，却眼见预言在末代应验。",
+      "keywords": ["坚韧", "记忆", "禁忌"],
+      "quote": "只要我还活着，这房子就不会塌。"
+    },
+    {
+      "id": "melquiades",
+      "name": "梅尔基亚德斯",
+      "generation": 1,
+      "gender": "m",
+      "importance": 4,
+      "tags": ["吉普赛人", "智者"],
+      "summary": "多次“死亡”又归来的吉普赛智者",
+      "detail": "带来磁铁、望远镜与冰块，也留下用梵文写成的羊皮卷。他的手稿预言了布恩迪亚家族从第一人到末代的全部命运。",
+      "keywords": ["羊皮卷", "冰块", "预言"]
+    },
+    {
+      "id": "prudencio",
+      "name": "普鲁登希奥·阿吉拉尔",
+      "generation": 1,
+      "gender": "m",
+      "importance": 2,
+      "tags": ["亡灵"],
+      "summary": "被族长杀死的邻居，死后仍来交谈",
+      "detail": "因斗鸡与羞辱引发血案。死后阴魂不散，成为何塞·阿尔卡蒂奥·布恩迪亚孤独岁月里持续的对话者。",
+      "keywords": ["斗鸡", "亡灵"]
+    },
+    {
+      "id": "jose_arcadio",
+      "name": "何塞·阿尔卡蒂奥",
+      "generation": 2,
+      "gender": "m",
+      "importance": 5,
+      "tags": ["长子"],
+      "summary": "体魄惊人的长子，出走后又归来",
+      "detail": "追随吉普赛人离开马孔多，周游世界后带着纹身与野兽般的气息归来。与养妹丽贝卡成婚，后死于神秘枪击。",
+      "keywords": ["出走", "力量", "枪声"]
+    },
+    {
+      "id": "aureliano_col",
+      "name": "奥雷里亚诺·布恩迪亚上校",
+      "generation": 2,
+      "gender": "m",
+      "importance": 5,
+      "tags": ["上校", "自由党"],
+      "summary": "发动三十二场内战的人，马孔多出生的第一个人",
+      "detail": "年轻时在作坊打金鱼，战争年代成为传奇。签署停战协议后返回作坊，余生在小金鱼的熔铸与重铸中循环。",
+      "keywords": ["战争", "金鱼", "孤独"],
+      "quote": "多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。"
+    },
+    {
+      "id": "amaranta",
+      "name": "阿玛兰妲",
+      "generation": 2,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["幼女"],
+      "summary": "拒绝婚姻、编织寿衣的妹妹",
+      "detail": "与丽贝卡争风，拒绝皮埃特罗与赫里内勒多的求爱，几乎与侄子奥雷里亚诺·何塞陷入禁忌。寿衣织成之夜，以处子之身死去。",
+      "keywords": ["嫉妒", "寿衣", "拒绝"]
+    },
+    {
+      "id": "rebeca",
+      "name": "丽贝卡",
+      "generation": 2,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["养女"],
+      "summary": "远房表亲之女，被乌尔苏拉收养",
+      "detail": "初来时吃土、吮指，带着父母的骨殖。与皮埃特罗订婚后改嫁归来的何塞·阿尔卡蒂奥，被逐出家门；丈夫死后深居简出，与世隔绝。",
+      "keywords": ["吃土", "孤儿", "隔绝"]
+    },
+    {
+      "id": "pilar",
+      "name": "庇拉尔·特尔内拉",
+      "generation": 2,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["纸牌"],
+      "summary": "两兄弟的情人，贯穿全书的长寿女子",
+      "detail": "先后与何塞·阿尔卡蒂奥、奥雷里亚诺上校结合，生下阿尔卡蒂奥与奥雷里亚诺·何塞。善用纸牌占卜，几乎活过整部家族史。",
+      "keywords": ["占卜", "情人", "长寿"]
+    },
+    {
+      "id": "remedios_moscote",
+      "name": "蕾梅黛丝·摩斯科特",
+      "generation": 2,
+      "gender": "f",
+      "importance": 3,
+      "tags": ["上校之妻"],
+      "summary": "里正的幼女，上校过早逝去的妻子",
+      "detail": "尚年幼便嫁给奥雷里亚诺上校，为家宅带来短暂温情。怀孕后因血液中毒去世，成为上校战争生涯前的重要创伤。",
+      "keywords": ["早逝", "婚礼"]
+    },
+    {
+      "id": "apolinar",
+      "name": "堂阿波利纳尔·摩斯科特",
+      "generation": 2,
+      "gender": "m",
+      "importance": 2,
+      "tags": ["里正"],
+      "summary": "政府派来的保守党里正",
+      "detail": "蕾梅黛丝·摩斯科特之父。其到来标志着外部政权开始渗入马孔多的秩序。",
+      "keywords": ["保守党", "政权"]
+    },
+    {
+      "id": "pietro",
+      "name": "皮埃特罗·克雷斯皮",
+      "generation": 2,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["意大利人", "钢琴"],
+      "summary": "安装自动钢琴的意大利技师与音乐家",
+      "detail": "先与丽贝卡订婚，丽贝卡改嫁后转而追求阿玛兰妲，遭拒后自杀。他的出现把两姐妹的嫉妒彻底点燃。",
+      "keywords": ["自动钢琴", "求婚", "自杀"]
+    },
+    {
+      "id": "gerineldo",
+      "name": "赫里内勒多·马尔克斯",
+      "generation": 2,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["战友"],
+      "summary": "上校最亲密的战友与朋友",
+      "detail": "追随奥雷里亚诺上校征战，并长期追求阿玛兰妲。晚年与上校的友谊，是战争退去后少数尚未冷却的情感线索之一。",
+      "keywords": ["自由党", "求爱", "战友"]
+    },
+    {
+      "id": "arcadio",
+      "name": "阿尔卡蒂奥",
+      "generation": 3,
+      "gender": "m",
+      "importance": 4,
+      "tags": ["私生子"],
+      "summary": "何塞·阿尔卡蒂奥与庇拉尔之子，一度统治马孔多",
+      "detail": "由布恩迪亚家抚养长大，不知生母是谁。上校离开后掌管马孔多，渐成暴君，最终被保守党枪决。",
+      "keywords": ["独裁", "枪决"]
+    },
+    {
+      "id": "santa_sofia",
+      "name": "桑塔索菲亚·德拉·彼达",
+      "generation": 3,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["静默"],
+      "summary": "阿尔卡蒂奥之妻，默默操持家宅的女人",
+      "detail": "原是庇拉尔为避免母子乱伦而为阿尔卡蒂奥找来的女子，后成为其妻。生下美人儿蕾梅黛丝与双胞胎，一生几乎无声地照料家族，乌尔苏拉死后悄然离去。",
+      "keywords": ["家务", "隐忍", "离去"]
+    },
+    {
+      "id": "aureliano_jose",
+      "name": "奥雷里亚诺·何塞",
+      "generation": 3,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["上校之子"],
+      "summary": "上校与庇拉尔之子，迷恋婶婶阿玛兰妲",
+      "detail": "由阿玛兰妲抚养，参与父亲的战争，又因禁忌情感逃回马孔多。最终在战争年代死于保守党枪下。",
+      "keywords": ["禁忌", "战争"]
+    },
+    {
+      "id": "seventeen",
+      "name": "十七个奥雷里亚诺",
+      "generation": 3,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["集体", "私生子"],
+      "summary": "上校在战争中与十七个女人所生的儿子",
+      "detail": "均取名奥雷里亚诺，额上画着圣灰十字。日后几乎全部被报复性暗杀，只留下家族记忆中的一整代回声。",
+      "keywords": ["圣灰十字", "暗杀"]
+    },
+    {
+      "id": "remedios_beauty",
+      "name": "美人儿蕾梅黛丝",
+      "generation": 4,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["蕾梅黛丝"],
+      "summary": "美到足以致死的天真女子",
+      "detail": "阿尔卡蒂奥与桑塔索菲亚之女。容貌令追求者屡屡丧生，本人却极度单纯。一日扯着床单升上天空，从此失踪。",
+      "keywords": ["升天", "美貌", "天真"]
+    },
+    {
+      "id": "jose_arcadio_ii",
+      "name": "何塞·阿尔卡蒂奥第二",
+      "generation": 4,
+      "gender": "m",
+      "importance": 4,
+      "tags": ["双胞胎"],
+      "summary": "香蕉公司大屠杀的唯一幸存者",
+      "detail": "与奥雷里亚诺第二为孪生。见证三千人被机枪扫倒的广场，余生封闭在梅尔基亚德斯的房间里研读羊皮卷，并启蒙后来的奥雷里亚诺·巴比洛尼亚。",
+      "keywords": ["大屠杀", "羊皮卷", "见证"]
+    },
+    {
+      "id": "aureliano_ii",
+      "name": "奥雷里亚诺第二",
+      "generation": 4,
+      "gender": "m",
+      "importance": 5,
+      "tags": ["双胞胎", "首富"],
+      "summary": "挥霍与繁殖力惊人的孪生兄弟",
+      "detail": "名义上娶费尔南达，真心却在佩特拉·科特斯身边。牲畜在雨季前疯狂增殖，使他一度成为马孔多首富；四年大雨后家道中落。",
+      "keywords": ["狂欢", "牲畜", "大雨"]
+    },
+    {
+      "id": "fernanda",
+      "name": "费尔南达·德尔·卡皮奥",
+      "generation": 4,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["贵族"],
+      "summary": "没落贵族之女，奥雷里亚诺第二的妻子",
+      "detail": "带着女王幻觉进入布恩迪亚家，以刻板礼仪统治家宅。拆散梅梅与马乌里肖，并把外孙奥雷里亚诺隐秘抚养长大。",
+      "keywords": ["礼仪", "偏执", "女王"]
+    },
+    {
+      "id": "petra",
+      "name": "佩特拉·科特斯",
+      "generation": 4,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["情人"],
+      "summary": "奥雷里亚诺第二真正的伴侣",
+      "detail": "一度分不清孪生兄弟。与奥雷里亚诺第二长期同居，牲畜因他们的情欲而暴增。他死后靠卖彩票供养费尔南达与家宅。",
+      "keywords": ["彩票", "牲畜", "情欲"]
+    },
+    {
+      "id": "jose_arcadio_v",
+      "name": "何塞·阿尔卡蒂奥",
+      "generation": 5,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["神学院", "第五代长子"],
+      "summary": "被培养去当教皇的长子",
+      "detail": "费尔南达送往神学院。母亲死后携着罗马气味归来，发现藏金后纵欲挥霍，最终在浴室被劫匪杀害。与第二代何塞·阿尔卡蒂奥同名。",
+      "keywords": ["罗马", "藏金", "同名"]
+    },
+    {
+      "id": "meme",
+      "name": "蕾纳塔·蕾梅黛丝",
+      "generation": 5,
+      "gender": "f",
+      "importance": 4,
+      "tags": ["梅梅"],
+      "summary": "小名梅梅，钢琴出色，因爱被放逐",
+      "detail": "全名蕾纳塔·蕾梅黛丝，家中称梅梅。与马乌里肖·巴比洛尼亚相恋怀孕后，被费尔南达送进修道院，余生不再说话。",
+      "keywords": ["梅梅", "钢琴", "沉默"]
+    },
+    {
+      "id": "mauricio",
+      "name": "马乌里肖·巴比洛尼亚",
+      "generation": 5,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["黄蝴蝶"],
+      "summary": "梅梅的情人，身后总跟着黄蝴蝶",
+      "detail": "香蕉公司的技工。与梅梅的幽会被费尔南达设计打断，被当作贼击伤，余生瘫痪在孤独里。",
+      "keywords": ["黄蝴蝶", "技工"]
+    },
+    {
+      "id": "amaranta_ursula",
+      "name": "阿玛兰妲·乌尔苏拉",
+      "generation": 5,
+      "gender": "f",
+      "importance": 5,
+      "tags": ["归乡"],
+      "summary": "从欧洲归来、重振家宅的少女",
+      "detail": "继承乌尔苏拉的决断与活力。带着丈夫加斯通回到马孔多，后与侄儿奥雷里亚诺·巴比洛尼亚相恋，产下末代婴孩后大出血死去。",
+      "keywords": ["欧洲", "乱伦", "活力"]
+    },
+    {
+      "id": "gaston",
+      "name": "加斯通",
+      "generation": 5,
+      "gender": "m",
+      "importance": 2,
+      "tags": ["丈夫"],
+      "summary": "阿玛兰妲·乌尔苏拉的比利时丈夫",
+      "detail": "飞行员与冒险家。发现妻子决意留在马孔多后离开；得知她与奥雷里亚诺的关系后，只淡淡要求寄回自己的自行车。",
+      "keywords": ["飞行员", "离开"]
+    },
+    {
+      "id": "aureliano_bab",
+      "name": "奥雷里亚诺·巴比洛尼亚",
+      "generation": 6,
+      "gender": "m",
+      "importance": 5,
+      "tags": ["破译者"],
+      "summary": "梅梅与马乌里肖之子，羊皮卷的最终读者",
+      "detail": "在费尔南达的隐瞒下长大，性格酷似上校。与阿玛兰妲·乌尔苏拉相爱并生下末代子嗣；在飓风摧毁马孔多时读完家族的全部命运。",
+      "keywords": ["羊皮卷", "孤独", "终结"],
+      "quote": "注定经受百年孤独的家族不会有第二次机会在大地上出现。"
+    },
+    {
+      "id": "nigromanta",
+      "name": "尼格罗马塔",
+      "generation": 6,
+      "gender": "f",
+      "importance": 2,
+      "tags": ["情人"],
+      "summary": "奥雷里亚诺·巴比洛尼亚早年的情人",
+      "detail": "在他与阿玛兰妲·乌尔苏拉的感情之前，以肉体温暖过这个封闭宅院里长大的青年。",
+      "keywords": ["慰藉"]
+    },
+    {
+      "id": "gabriel",
+      "name": "加布列尔",
+      "generation": 6,
+      "gender": "m",
+      "importance": 2,
+      "tags": ["友人"],
+      "summary": "奥雷里亚诺晚年的朋友之一",
+      "detail": "赫里内勒多·马尔克斯的后裔。与奥雷里亚诺在破败的马孔多彼此作伴，后来离开去往巴黎。",
+      "keywords": ["巴黎", "后裔"]
+    },
+    {
+      "id": "catalan",
+      "name": "加泰罗尼亚智者",
+      "generation": 6,
+      "gender": "m",
+      "importance": 2,
+      "tags": ["书店"],
+      "summary": "书店老板，奥雷里亚诺的忘年朋友",
+      "detail": "在马孔多经营旧书店，与奥雷里亚诺讨论书籍与世界。最终离开这座注定消失的镇子。",
+      "keywords": ["旧书", "离开"]
+    },
+    {
+      "id": "aureliano_last",
+      "name": "奥雷里亚诺",
+      "generation": 7,
+      "gender": "m",
+      "importance": 3,
+      "tags": ["末代", "猪尾巴"],
+      "summary": "家族最后的婴儿，生有猪尾巴",
+      "detail": "奥雷里亚诺·巴比洛尼亚与阿玛兰妲·乌尔苏拉之子。被蚁群拖走吞食，应验了羊皮卷与乌尔苏拉最深的恐惧。全名仍是奥雷里亚诺。",
+      "keywords": ["猪尾巴", "蚂蚁", "终结"]
+    }
+  ],
+  "edges": [
+    { "source": "jose_buendia", "target": "ursula", "type": "spouse", "label": "夫妻" },
+    { "source": "jose_buendia", "target": "jose_arcadio", "type": "parent" },
+    { "source": "ursula", "target": "jose_arcadio", "type": "parent" },
+    { "source": "jose_buendia", "target": "aureliano_col", "type": "parent" },
+    { "source": "ursula", "target": "aureliano_col", "type": "parent" },
+    { "source": "jose_buendia", "target": "amaranta", "type": "parent" },
+    { "source": "ursula", "target": "amaranta", "type": "parent" },
+    { "source": "jose_buendia", "target": "rebeca", "type": "adopt", "label": "收养" },
+    { "source": "ursula", "target": "rebeca", "type": "adopt", "label": "收养" },
+
+    { "source": "jose_buendia", "target": "melquiades", "type": "friend" },
+    { "source": "jose_buendia", "target": "prudencio", "type": "rival", "label": "仇杀" },
+    { "source": "jose_buendia", "target": "prudencio", "type": "friend", "label": "亡灵交谈" },
+
+    { "source": "jose_arcadio", "target": "pilar", "type": "lover" },
+    { "source": "aureliano_col", "target": "pilar", "type": "lover" },
+    { "source": "jose_arcadio", "target": "rebeca", "type": "spouse", "label": "夫妻" },
+    { "source": "aureliano_col", "target": "remedios_moscote", "type": "spouse", "label": "夫妻" },
+    { "source": "apolinar", "target": "remedios_moscote", "type": "parent" },
+
+    { "source": "pietro", "target": "rebeca", "type": "engaged", "label": "订婚" },
+    { "source": "pietro", "target": "amaranta", "type": "lover", "label": "追求" },
+    { "source": "gerineldo", "target": "amaranta", "type": "lover", "label": "求爱" },
+    { "source": "aureliano_col", "target": "gerineldo", "type": "friend" },
+    { "source": "amaranta", "target": "rebeca", "type": "rival", "label": "情敌" },
+
+    { "source": "jose_arcadio", "target": "arcadio", "type": "parent" },
+    { "source": "pilar", "target": "arcadio", "type": "parent" },
+    { "source": "aureliano_col", "target": "aureliano_jose", "type": "parent" },
+    { "source": "pilar", "target": "aureliano_jose", "type": "parent" },
+    { "source": "aureliano_col", "target": "seventeen", "type": "parent" },
+    { "source": "aureliano_jose", "target": "amaranta", "type": "lover", "label": "禁忌依恋" },
+
+    { "source": "arcadio", "target": "santa_sofia", "type": "spouse", "label": "夫妻" },
+    { "source": "arcadio", "target": "santa_sofia", "type": "lover" },
+    { "source": "arcadio", "target": "remedios_beauty", "type": "parent" },
+    { "source": "santa_sofia", "target": "remedios_beauty", "type": "parent" },
+    { "source": "arcadio", "target": "jose_arcadio_ii", "type": "parent" },
+    { "source": "santa_sofia", "target": "jose_arcadio_ii", "type": "parent" },
+    { "source": "arcadio", "target": "aureliano_ii", "type": "parent" },
+    { "source": "santa_sofia", "target": "aureliano_ii", "type": "parent" },
+
+    { "source": "aureliano_ii", "target": "fernanda", "type": "spouse", "label": "夫妻" },
+    { "source": "aureliano_ii", "target": "petra", "type": "lover" },
+    { "source": "aureliano_ii", "target": "jose_arcadio_v", "type": "parent" },
+    { "source": "fernanda", "target": "jose_arcadio_v", "type": "parent" },
+    { "source": "aureliano_ii", "target": "meme", "type": "parent" },
+    { "source": "fernanda", "target": "meme", "type": "parent" },
+    { "source": "aureliano_ii", "target": "amaranta_ursula", "type": "parent" },
+    { "source": "fernanda", "target": "amaranta_ursula", "type": "parent" },
+
+    { "source": "meme", "target": "mauricio", "type": "lover" },
+    { "source": "meme", "target": "aureliano_bab", "type": "parent" },
+    { "source": "mauricio", "target": "aureliano_bab", "type": "parent" },
+    { "source": "amaranta_ursula", "target": "gaston", "type": "spouse", "label": "夫妻" },
+
+    { "source": "melquiades", "target": "jose_arcadio_ii", "type": "friend", "label": "手稿指引" },
+    { "source": "jose_arcadio_ii", "target": "aureliano_bab", "type": "friend", "label": "口述真相" },
+    { "source": "melquiades", "target": "aureliano_bab", "type": "friend", "label": "羊皮卷" },
+
+    { "source": "aureliano_bab", "target": "nigromanta", "type": "lover" },
+    { "source": "aureliano_bab", "target": "amaranta_ursula", "type": "lover", "label": "乱伦之恋" },
+    { "source": "aureliano_bab", "target": "aureliano_last", "type": "parent" },
+    { "source": "amaranta_ursula", "target": "aureliano_last", "type": "parent" },
+    { "source": "aureliano_bab", "target": "gabriel", "type": "friend" },
+    { "source": "aureliano_bab", "target": "catalan", "type": "friend" }
+  ]
+}
