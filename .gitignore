@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Camera originals for the gallery. Web copies live in public/gallery/.
+gallery-source/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

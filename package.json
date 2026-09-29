@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "writings:import": "python scripts/import-writing.py"
+    "writings:import": "python scripts/import-writing.py",
+    "gallery:prepare": "python scripts/prepare-gallery.py"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",

@@ -69,6 +69,7 @@ public/           # 静态资源，构建时原样拷贝
 - 随笔 / 文章：`src/data/writings/`（见下一节）
 - 页面布局与样式：`src/pages/`、`src/components/`
 - 图片等静态文件：放进 `public/`，代码里用 `/personal/你的文件名` 引用
+- 摄影作品：原片放 `gallery-source/`，再运行 `npm run gallery:prepare`。不要把相机原片直接放进 `public/`（误放在 `public/gallery/` 根下的原片，脚本会挪进 `gallery-source/`）。网页实际用的是 `public/gallery/wall/` 和 `public/gallery/view/`
 
 ## 新写一篇随笔 / Review（Word → 网站）
 
