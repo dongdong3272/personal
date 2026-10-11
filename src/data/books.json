@@ -112,14 +112,14 @@
   },
   {
     "id": "book11",
-    "image": "https://cdn.kobo.com/book-images/6f6a5479-90e9-4d8b-a6af-f31caf4e345b/1200/1200/False/SHA96h83KjaSygBncS5AZQ.jpg",
-    "title": "天龙八部",
-    "year": 1963,
-    "author": "金庸",
+    "image": "https://covers.openlibrary.org/b/isbn/9787544253994-L.jpg",
+    "title": "Cien años de soledad",
+    "year": 1967,
+    "author": "Gabriel García Márquez",
     "description": "",
     "type": "book",
-    "genre": "Wuxia Fiction",
-    "rating": 8.5
+    "genre": "Magical Realism, Historical Fiction",
+    "rating": 9.0
   },
   {
     "id": "book12",

@@ -5,6 +5,7 @@ import Library from "./pages/Library";
 import AtlasGraph from "./pages/AtlasGraph";
 import Gallery from "./pages/Gallery";
 import Cinema from "./pages/Cinema";
+import Games from "./pages/Games";
 import Writings from "./pages/Writings";
 import WritingDetail from "./pages/WritingDetail";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/library" element={<Library />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/cinema" element={<Cinema />} />
+            <Route path="/games" element={<Games />} />
             <Route path="/writings" element={<Writings />} />
             <Route path="/writings/atlas/:id" element={<AtlasGraph />} />
             <Route path="/writings/:id" element={<WritingDetail />} />

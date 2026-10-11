@@ -287,6 +287,20 @@
   letter-spacing: 1.2px;
 }
 
+@media (max-width: 1200px) {
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-menu {
+    gap: 0.75rem;
+  }
+
+  .nav-link {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .navigation {
     padding: 0 1rem;

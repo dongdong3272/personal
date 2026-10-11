@@ -8,9 +8,10 @@ export interface MediaCardProps {
   year?: number | string;
   author?: string; // For books
   director?: string; // For movies/anime
+  developer?: string; // For games
   description?: string;
   reviewLink?: string;
-  type?: "book" | "movie" | "anime" | "other";
+  type?: "book" | "movie" | "anime" | "game" | "other";
   rating?: number; // Optional rating out of 5 or 10
   genre?: string;
   onClick?: () => void;
@@ -22,6 +23,7 @@ const MediaCard: React.FC<MediaCardProps> = ({
   year,
   author,
   director,
+  developer,
   description,
   reviewLink,
   type = "other",
@@ -40,6 +42,7 @@ const MediaCard: React.FC<MediaCardProps> = ({
   const getCreatorText = () => {
     if (author) return `by ${author}`;
     if (director) return `dir. ${director}`;
+    if (developer) return `by ${developer}`;
     return "";
   };
 
@@ -51,6 +54,8 @@ const MediaCard: React.FC<MediaCardProps> = ({
         return "🎬";
       case "anime":
         return "🎌";
+      case "game":
+        return "🎮";
       default:
         return "📖";
     }

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "game1",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_600x900.jpg",
+    "title": "Baldur's Gate 3",
+    "year": 2023,
+    "developer": "Larian Studios",
+    "description": "",
+    "type": "game",
+    "genre": "CRPG",
+    "rating": 9.7
+  },
+  {
+    "id": "game2",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900.jpg",
+    "title": "Red Dead Redemption 2",
+    "year": 2018,
+    "developer": "Rockstar Games",
+    "description": "",
+    "type": "game",
+    "genre": "Action Adventure",
+    "rating": 9.5
+  },
+  {
+    "id": "game3",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_600x900.jpg",
+    "title": "The Witcher 3",
+    "year": 2015,
+    "developer": "CD Projekt Red",
+    "description": "",
+    "type": "game",
+    "genre": "Action RPG",
+    "rating": 9.3
+  },
+  {
+    "id": "game4",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/646570/library_600x900.jpg",
+    "title": "Slay the Spire",
+    "year": 2019,
+    "developer": "Mega Crit",
+    "description": "",
+    "type": "game",
+    "genre": "Deckbuilder",
+    "rating": 9.2
+  },
+  {
+    "id": "game5",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/620/library_600x900.jpg",
+    "title": "Portal 2",
+    "year": 2011,
+    "developer": "Valve",
+    "description": "",
+    "type": "game",
+    "genre": "Puzzle",
+    "rating": 9.1
+  },
+  {
+    "id": "game6",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "year": 2017,
+    "developer": "Nintendo",
+    "description": "",
+    "type": "game",
+    "genre": "Action Adventure",
+    "rating": 9.1
+  },
+  {
+    "id": "game7",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2358720/library_600x900.jpg",
+    "title": "Black Myth: Wukong",
+    "year": 2024,
+    "developer": "Game Science",
+    "description": "",
+    "type": "game",
+    "genre": "Action RPG",
+    "rating": 9.0
+  },
+  {
+    "id": "game8",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/736260/library_600x900.jpg",
+    "title": "Baba Is You",
+    "year": 2019,
+    "developer": "Hempuli",
+    "description": "",
+    "type": "game",
+    "genre": "Puzzle",
+    "rating": 9.0
+  },
+  {
+    "id": "game9",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1426210/library_600x900.jpg",
+    "title": "It Takes Two",
+    "year": 2021,
+    "developer": "Hazelight Studios",
+    "description": "",
+    "type": "game",
+    "genre": "Co-op Adventure",
+    "rating": 8.9
+  },
+  {
+    "id": "game10",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1903340/library_600x900.jpg",
+    "title": "Clair Obscur: Expedition 33",
+    "year": 2025,
+    "developer": "Sandfall Interactive",
+    "description": "",
+    "type": "game",
+    "genre": "Turn-based RPG",
+    "rating": 8.7
+  }
+]

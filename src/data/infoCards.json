@@ -48,14 +48,6 @@
     "variant": "accent"
   },
   {
-    "id": "7",
-    "icon": "💎",
-    "title": "Favorite Brands",
-    "value": "SONY & PUMA",
-    "description": "Music and Sports",
-    "variant": "accent"
-  },
-  {
     "id": "8",
     "icon": "🎤",
     "title": "Favorite Singers",
@@ -93,6 +85,14 @@
     "title": "Favorite Actor",
     "value": "Leonardo DiCaprio",
     "description": "Shutter Island",
+    "variant": "accent"
+  },
+  {
+    "id": "7",
+    "icon": "🎮",
+    "title": "Favorite Game",
+    "value": "Baldur's Gate 3",
+    "description": "CRPG",
     "variant": "accent"
   }
 ]
