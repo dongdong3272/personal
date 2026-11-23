@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
+import { birthdayFromParts } from "../auth/normalize";
 import {
   gameQuizOptions,
   movieQuizOptions,
@@ -30,7 +31,8 @@ const Unlock = () => {
   const shuffledMovies = useMemo(() => shuffle(movieQuizOptions), []);
   const shuffledGames = useMemo(() => shuffle(gameQuizOptions), []);
 
-  const [birthday, setBirthday] = useState("");
+  const [birthMonth, setBirthMonth] = useState("");
+  const [birthDay, setBirthDay] = useState("");
   const [hometown, setHometown] = useState("");
   const [movieId, setMovieId] = useState("");
   const [gameId, setGameId] = useState("");
@@ -61,8 +63,13 @@ const Unlock = () => {
     event.preventDefault();
     setError(null);
 
+    const birthday = birthdayFromParts(birthMonth, birthDay);
     if (!birthday || !hometown || !movieId || !gameId) {
-      setError("Please answer all four questions.");
+      setError(
+        birthday
+          ? "Please answer all four questions."
+          : "Enter a valid month (1–12) and day (1–31).",
+      );
       return;
     }
 
@@ -98,18 +105,45 @@ const Unlock = () => {
 
         <form className="unlock-form" onSubmit={onSubmit}>
           <div className="unlock-field">
-            <label className="unlock-label" htmlFor="auth-birthday">
-              My birthday
-            </label>
-            <input
-              id="auth-birthday"
-              className="unlock-input"
-              type="date"
-              value={birthday}
-              onChange={(e) => setBirthday(e.target.value)}
-              autoComplete="off"
-              required
-            />
+            <span className="unlock-label">My birthday</span>
+            <div className="unlock-birthday-row">
+              <div className="unlock-birthday-part">
+                <label className="unlock-sublabel" htmlFor="auth-birth-month">
+                  Month
+                </label>
+                <input
+                  id="auth-birth-month"
+                  className="unlock-input"
+                  type="number"
+                  inputMode="numeric"
+                  min={1}
+                  max={12}
+                  placeholder="1–12"
+                  value={birthMonth}
+                  onChange={(e) => setBirthMonth(e.target.value)}
+                  autoComplete="off"
+                  required
+                />
+              </div>
+              <div className="unlock-birthday-part">
+                <label className="unlock-sublabel" htmlFor="auth-birth-day">
+                  Day
+                </label>
+                <input
+                  id="auth-birth-day"
+                  className="unlock-input"
+                  type="number"
+                  inputMode="numeric"
+                  min={1}
+                  max={31}
+                  placeholder="1–31"
+                  value={birthDay}
+                  onChange={(e) => setBirthDay(e.target.value)}
+                  autoComplete="off"
+                  required
+                />
+              </div>
+            </div>
           </div>
 
           <div className="unlock-field">

@@ -6,11 +6,11 @@ export type AuthQuestionId =
   | "favorite_movie"
   | "favorite_game";
 
-export const AUTH_PEPPER = "replace-with-long-random-string";
+export const AUTH_PEPPER = "TJzkMKgwFnp6V70fYEeSu9LqDUQGNtIxvyi8djaWPo5OmblZ";
 
 export const AUTH_HASHES: Record<AuthQuestionId, string> = {
-  birthday: "748ba6d3bd582e3d1e0fe4869fa13eee335a24aea825eb5d2ff6820374b5bb40",
-  hometown: "e8edbda1a07719ed5a85c6359bedf8db7511a39d9e23b828058bde556e9c854d",
-  favorite_movie: "dd7c0895c64e60ef1714153632b2f5f95855cbaa28dd20fbe24f12f568c698ee",
-  favorite_game: "70e677f921606ca23decd59be99a26689f722cfbee3cfba4ccbe44cd71ebb0d8",
+  birthday: "9310d495b0043bbdb5f82a74a4556bb77cc090777d2220cb380a96ca3eeb8e62",
+  hometown: "1031874ca51dcaa3e156cb3bd6ce353d46ad1673f68e02f5e07935a43fa7c3a0",
+  favorite_movie: "813e6d6874a22bc449bd831b2b9b7e7b76b1082866972ca37e3c5681e25ec411",
+  favorite_game: "5ddea77d33685853b6bb5cb051ab8cb1e0d14041a43ea00115185e816fd91bf2",
 };

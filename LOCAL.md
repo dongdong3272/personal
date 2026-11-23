@@ -151,7 +151,7 @@ python scripts/import-writing.py ".\draft.docx" --title "某标题" --date 2026-
 
 | # | 形式 |
 |---|------|
-| 1 | 生日（日期选择，按 `YYYY-MM-DD` 校验） |
+| 1 | 生日（月份 + 日 两个数字框，校验为 `MM-DD`，不含年份） |
 | 2 | 家乡（单行文本，`trim` + 小写 + 合并空白） |
 | 3 | 最喜欢的电影（5 选 1，选项在 `src/config/authQuizOptions.ts`） |
 | 4 | 最喜欢的游戏（5 选 1，同上） |
