@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+.env.auth
+.env.auth.local
 
 # Camera originals for the gallery. Web copies live in public/gallery/.
 gallery-source/

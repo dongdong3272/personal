@@ -145,9 +145,46 @@ python scripts/import-writing.py ".\draft.docx" --pdf ".\out.pdf"
 python scripts/import-writing.py ".\draft.docx" --title "某标题" --date 2026-03-01 --tags "Essay,Personal"
 ```
 
+## 访客验证（四道题门禁）
+
+全站路由进门前要先答对四道题；通过后 **7 天**内浏览器 `localStorage` 免重复作答。
+
+| # | 形式 |
+|---|------|
+| 1 | 生日（日期选择，按 `YYYY-MM-DD` 校验） |
+| 2 | 家乡（单行文本，`trim` + 小写 + 合并空白） |
+| 3 | 最喜欢的电影（5 选 1，选项在 `src/config/authQuizOptions.ts`） |
+| 4 | 最喜欢的游戏（5 选 1，同上） |
+
+错任意一题只会笼统提示，不会指出哪一题错。电影/游戏比对的是选项 **id**，不是自由输入。
+
+### 配置标准答案（生日、家乡、哈希）
+
+明文答案不要写进 Git。流程：
+
+1. 复制 `.env.auth.example` → `.env.auth`（已在 `.gitignore`）。
+2. 填写 `AUTH_PEPPER`（随机长字符串）、`AUTH_BIRTHDAY`、`AUTH_HOMETOWN`。
+3. `AUTH_MOVIE_OPTION_ID` / `AUTH_GAME_OPTION_ID` 与 `authQuizOptions.ts` 里正确项 id 一致（默认 `farewell-my-concubine`、`baldurs-gate-3`）。
+4. 生成哈希并写入前端：
+
+```powershell
+npm run auth:hash
+```
+
+会更新 `src/config/authHashes.generated.ts`。改过生日/家乡/ pepper 或换干扰项后，deploy 前先再跑一次。
+
+只改电影/游戏**干扰项**文案时，改 `authQuizOptions.ts` 即可，不必动 `.env`。
+
+### 局限（静态站）
+
+- 挡不住：手改 `localStorage`、直接访问 `public/gallery/` 图片 URL、在打包 JS 里搜随笔正文。
+- 单选题的正确项由哈希比对；懂技术的人仍可对 5 个选项 id 各算一遍哈希。主要防不熟的人反复点页面瞎试。
+
+仓库里若仍是占位 pepper/答案生成的 `authHashes.generated.ts`，线上解锁不会通过，直到你用真实 `.env.auth` 跑 `auth:hash` 再 deploy。
+
 ## 本地改完要上线时
 
-确认没问题后：
+确认没问题后（**含 `npm run auth:hash`**）：
 
 ```powershell
 npm run deploy
